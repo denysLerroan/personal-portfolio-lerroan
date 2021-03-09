@@ -17,3 +17,7 @@ img {
   display: block;
   max-width: 100%;
 }
+
+input[type='text'] {
+  display: block;
+}
