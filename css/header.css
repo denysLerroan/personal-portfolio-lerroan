@@ -1,0 +1,29 @@
+.header {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 170px 0px 200px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 4.5em;
+  line-height: 68px;
+  margin: 0 10px;
+}
+
+.header p {
+  flex: 1 1 350px;
+  font-size: 1.5em;
+  line-height: 33px;
+  max-width: 400px;
+  color: #737980;
+  margin: 0 10px;
+}
+
+.header p > span {
+  font-weight: 700;
+  color: #222233;
+}
