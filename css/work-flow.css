@@ -1,0 +1,26 @@
+.work-flow {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 120px 0;
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+
+.work-flow-info {
+  flex: 2 1 950px;
+}
+
+.work-flow-info h2 {
+  margin: 0 10px;
+  font-size: 4.5em;
+  font-weight: 500;
+  line-height: 4rem;
+}
+
+.work-flow-info p {
+  max-width: 450px;
+  font-size: 1.125em;
+  margin: 60px 10px;
+  color: #737980;
+}
