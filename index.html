@@ -108,9 +108,9 @@
       <a href="#">See more about my services</a>
     </section>
 
-    <section>
+    <section class="contact-home">
       <div>
-        <div>
+        <div class="contact-call">
           <p>
             Do you have an idea to expand your business or do you want to
             improve your brand exposure and reach more customers?
@@ -119,7 +119,7 @@
           <p>We can make this together!</p>
         </div>
 
-        <form action="">
+        <form action="" class="contact-form">
           <label for="">What is your name?</label>
           <input type="text" placeholder="Type your first name" />
           <label for="">What is your Company name?</label>
@@ -128,29 +128,46 @@
           <input type="text" placeholder="Type your e-mail" />
 
           <h2>What do you want to get done?</h2>
-          <input
-            type="radio"
-            id="landing-page"
-            value="landing-page"
-            name="service"
-          />
-          <label for="landing-page">Landing Page</label>
-          <input type="radio" id="website" value="website" name="service" />
-          <label for="website">WebSite</label>
-          <input
-            type="radio"
-            id="e-commerce"
-            value="e-commerce"
-            name="service"
-          />
-          <label for="e-commerce">E-commerce</label>
-          <input type="radio" id="ui-design" value="ui-design" name="service" />
-          <label for="ui-design">UI Design</label>
-          <br />
-          <label for="">Tell me a little about your project</label>
-          <input type="text" placeholder="Type your message" />
+          <div class="form-options">
+            <input
+              type="radio"
+              id="landing-page"
+              value="landing-page"
+              name="service"
+            />
+            <label for="landing-page">Landing Page</label>
+          </div>
+          <div class="form-options">
+            <input type="radio" id="website" value="website" name="service" />
+            <label for="website">WebSite</label>
+          </div>
+          <div class="form-options">
+            <input
+              type="radio"
+              id="e-commerce"
+              value="e-commerce"
+              name="service"
+            />
+            <label for="e-commerce">E-commerce</label>
+          </div>
+          <div class="form-options">
+            <input
+              type="radio"
+              id="ui-design"
+              value="ui-design"
+              name="service"
+            />
+            <label for="ui-design">UI Design</label>
+          </div>
 
-          <button type="submit">SEND</button>
+          <h2>Tell me a little about your project</h2>
+          <textarea
+            placeholder="Type your message"
+            rows="4"
+            cols="50"
+          ></textarea>
+
+          <button type="submit">Send</button>
         </form>
       </div>
     </section>

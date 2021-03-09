@@ -3,9 +3,9 @@
   margin: 0 auto 120px auto;
 }
 .services__home > a {
-  display: block;
-  margin-top: 20px;
-  margin-left: 10px;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
   font-size: 1.125em;
   color: #222233;
   text-decoration: underline;
