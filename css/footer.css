@@ -1,0 +1,89 @@
+.footer {
+  padding: 60px 0;
+  color: #fff;
+  background: #222233;
+}
+
+.footer-content {
+  max-width: 1260px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-info {
+  margin: 0 10px;
+  flex: 1 1 570px;
+}
+
+.footer-quote p {
+  max-width: 500px;
+  font-size: 1.5em;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  color: #fcfeff;
+}
+.footer-quote cite {
+  display: block;
+  font-size: 0.875em;
+  margin: 10px 0 40px 350px;
+  color: #737980;
+}
+
+.footer-nav {
+  margin: 0 30px;
+}
+
+.footer-nav ul {
+  display: flex;
+}
+
+.footer-nav ul li a {
+  display: inline-block;
+  margin-right: 40px;
+  margin-bottom: 80px;
+  font-size: 1.125em;
+  text-decoration: underline;
+  color: #fcfeff;
+}
+.footer-nav ul li a:hover {
+  color: #1a8dff;
+}
+
+.footer-copy {
+  display: flex;
+}
+.footer-copy p {
+  font-size: 1.125em;
+  margin: 0 20px 0 30px;
+}
+.footer-copy img {
+  padding-top: 3px;
+}
+
+.footer-contact {
+  flex: 2;
+}
+
+.footer-contact p {
+  font-size: 0.675em;
+  color: #737980;
+}
+.footer-contact a {
+  display: block;
+  margin: 5px 0 40px 0;
+  font-size: 1.125em;
+  text-decoration: underline;
+  color: #fcfeff;
+}
+.footer-contact a:hover {
+  color: #1a8dff;
+}
+.footer-contact ul {
+  display: flex;
+}
+.footer-contact ul li a {
+  margin-right: 40px;
+}
