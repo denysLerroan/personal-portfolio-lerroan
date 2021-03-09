@@ -65,6 +65,7 @@
 .call-portfolio {
   display: inline-block;
   margin-top: 230px;
+  font-size: 1.125em;
   padding: 10px 0;
   text-decoration: underline;
   color: #222233;
