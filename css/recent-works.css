@@ -15,9 +15,8 @@
 
 .work {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0 10px;
-  /* flex-wrap: wrap; */
 }
 
 .work__info h3 {
@@ -40,11 +39,20 @@
 }
 .work__info.made-marketing--before h3::before {
   border-color: #e6e100;
+  margin: 0 5px 0 5px;
+}
+
+.work__info {
+  flex: 1;
+}
+
+.work__image {
+  flex: 1;
 }
 
 .work__info p {
   max-width: 400px;
-  padding-left: 21px;
+  padding: 0 21px;
   font-weight: 400;
   font-size: 1.125em;
   line-height: 1.462em;
@@ -64,11 +72,15 @@
 
 .call-portfolio {
   display: inline-block;
-  margin-top: 230px;
+  margin-top: 220px;
   font-size: 1.125em;
   padding: 10px 0;
   text-decoration: underline;
   color: #222233;
+}
+
+.call-portfolio--mobile {
+  display: none;
 }
 
 .made-marketing {

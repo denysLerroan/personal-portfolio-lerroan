@@ -10,9 +10,63 @@
   .header {
     padding: 100px 0px 130px 0px;
   }
-
   .header h1 {
     flex: 1 1 655px;
     margin: 0 10px 40px 10px;
+  }
+}
+
+/* Rcent Works */
+
+@media (min-width: 641px) and (max-width: 1265px) {
+  .call-portfolio {
+    display: none;
+  }
+  .call-portfolio.call-portfolio--mobile {
+    display: inline-block;
+    margin-top: 0;
+    font-size: 1.125em;
+    padding: 40px 21px;
+  }
+}
+
+@media (max-width: 640px) {
+  .recent-works {
+    padding: 100px 0;
+  }
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 15px;
+  }
+  .work__info {
+    flex: 1 1 600px;
+  }
+  .work__info {
+    flex: 2 1 600px;
+  }
+  .work__image {
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+  .work__info p {
+    max-width: 100%;
+    padding: 0 21px;
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 1.462em;
+    color: #737980;
+  }
+  .call-portfolio {
+    display: none;
+  }
+  .call-portfolio.call-portfolio--mobile {
+    display: inline-block;
+    margin-top: 0;
+    font-size: 1.125em;
+    padding: 0 21px;
+  }
+  .work__image.made-marketing--order {
+    order: 1;
   }
 }
