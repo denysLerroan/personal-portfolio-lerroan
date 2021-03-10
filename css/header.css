@@ -9,13 +9,14 @@
 }
 
 .header h1 {
+  flex: 1 1 650px;
   font-size: 4.5em;
   line-height: 68px;
-  margin: 0 10px;
+  margin: 0 40px 40px 10px;
 }
 
 .header p {
-  flex: 1 1 350px;
+  flex: 1 1 400px;
   font-size: 1.5em;
   line-height: 33px;
   max-width: 400px;

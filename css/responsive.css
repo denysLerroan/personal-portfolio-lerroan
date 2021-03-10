@@ -1,0 +1,18 @@
+/* Header */
+@media (max-width: 1200px) {
+  .header h1 {
+    flex: 1 1 655px;
+    margin: 0 20px 40px 10px;
+  }
+}
+
+@media (max-width: 1121px) {
+  .header {
+    padding: 100px 0px 130px 0px;
+  }
+
+  .header h1 {
+    flex: 1 1 655px;
+    margin: 0 10px 40px 10px;
+  }
+}
