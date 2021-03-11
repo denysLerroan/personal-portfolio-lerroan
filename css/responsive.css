@@ -116,3 +116,62 @@
     margin: 20px 20px;
   }
 }
+
+/* contact */
+
+@media (max-width: 1024px) {
+  .contact-home {
+    padding: 120px 0;
+    overflow: hidden;
+  }
+
+  .contact-call p {
+    margin: 0 100px 0 10px;
+    max-width: 520px;
+    font-size: 2em;
+    line-height: 2.2rem;
+  }
+}
+@media (max-width: 870px) {
+  .contact-home {
+    padding: 120px 0 60px 0;
+    overflow: hidden;
+  }
+
+  .contact-home > div {
+    flex-wrap: wrap;
+  }
+
+  .contact-call p {
+    margin: 0 100px 10px 10px;
+    max-width: 520px;
+    min-width: 450px;
+    font-size: 2em;
+    line-height: 2.2rem;
+  }
+  .contact-call p:last-child {
+    font-size: 2em;
+    line-height: 2.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .contact-home {
+    padding: 120px 0 60px 0;
+    overflow: hidden;
+  }
+
+  .contact-call p {
+    margin: 0 100px 10px 10px;
+    max-width: 400px;
+    font-size: 1.5em;
+    line-height: 1.6rem;
+  }
+  .contact-call p:last-child {
+    font-size: 1.4em;
+    line-height: 1.6rem;
+  }
+  .contact-call a {
+    font-size: 1.75em;
+    line-height: 2rem;
+  }
+}
