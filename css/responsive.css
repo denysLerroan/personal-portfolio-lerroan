@@ -95,3 +95,24 @@
     max-width: 70%;
   }
 }
+
+/* services-home */
+
+@media (max-width: 878px) {
+  .services__home {
+    max-width: 1260px;
+    margin: 0 auto 60px auto;
+  }
+
+  .services__home > h2 {
+    margin: 20px 10px 10px 10px;
+  }
+
+  .services__items {
+    flex-wrap: wrap;
+  }
+
+  .services__items ul {
+    margin: 20px 20px;
+  }
+}
