@@ -13,8 +13,8 @@
 }
 
 .footer-info {
-  margin: 0 10px;
-  flex: 1 1 570px;
+  margin: 0 20px 0 10px;
+  flex: 1 1 400px;
 }
 
 .footer-quote p {
@@ -38,15 +38,17 @@
 
 .footer-nav ul {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-nav ul li a {
   display: inline-block;
+  min-width: max-content;
   margin-right: 40px;
   margin-bottom: 80px;
   font-size: 1.125em;
   text-decoration: underline;
-  color: #fcfeff;
+  color: #ffffff;
 }
 .footer-nav ul li a:hover {
   color: #1a8dff;
@@ -64,7 +66,7 @@
 }
 
 .footer-contact {
-  flex: 2;
+  flex: 1;
 }
 
 .footer-contact p {
@@ -72,7 +74,7 @@
   color: #737980;
 }
 .footer-contact a {
-  display: block;
+  display: inline-block;
   margin: 5px 0 40px 0;
   font-size: 1.125em;
   text-decoration: underline;

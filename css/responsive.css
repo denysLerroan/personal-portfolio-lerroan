@@ -175,3 +175,79 @@
     line-height: 2rem;
   }
 }
+
+/* footer */
+@media (max-width: 845px) {
+  .footer-content {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .footer-info {
+    margin: 0 10px;
+  }
+
+  .footer-quote p {
+    max-width: 300px;
+    font-size: 1em;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    color: #fcfeff;
+  }
+  .footer-quote cite {
+    display: block;
+    margin: 10px auto 40px auto;
+    text-align: right;
+  }
+
+  .footer-nav {
+    margin: 0px auto;
+  }
+
+  .footer-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .footer-nav ul li a {
+    margin-right: 15px;
+    margin-bottom: 20px;
+    font-size: 0.875em;
+  }
+
+  .footer-copy {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-copy img {
+    margin: 0 5px;
+  }
+  .footer-copy p {
+    font-size: 0.675em;
+    margin: 20px 10px;
+  }
+
+  .footer-contact {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .footer-contact p {
+    margin: 0 10px;
+    font-size: 0.675em;
+  }
+  .footer-contact a {
+    margin: 5px 0 20px 10px;
+    font-size: 0.875em;
+    color: #fcfeff;
+  }
+
+  .footer-contact ul li a {
+    margin-right: 20px;
+  }
+}
