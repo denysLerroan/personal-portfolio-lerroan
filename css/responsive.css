@@ -15,6 +15,29 @@
     margin: 0 10px 40px 10px;
   }
 }
+@media (max-width: 576px) {
+  .header {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 100px 0px 130px 0px;
+  }
+
+  .header h1 {
+    font-size: 3.5em;
+    margin: 20px 0;
+  }
+
+  .header p {
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .header p > span {
+    font-weight: 700;
+    color: #222233;
+  }
+}
 
 /* Rcent Works */
 
@@ -96,6 +119,30 @@
   }
 }
 
+@media (max-width: 576px) {
+  .work-flow {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 80px 0 60px 0;
+    display: block;
+  }
+
+  .work-flow-info h2 {
+    margin: 0 10px;
+    max-width: 700px;
+    font-size: 3.5em;
+    font-weight: 500;
+    line-height: 3.5rem;
+  }
+
+  .work-flow-info p {
+    max-width: 450px;
+    font-size: 1.125em;
+    margin: 40px 10px;
+    color: #737980;
+  }
+}
+
 /* services-home */
 
 @media (max-width: 878px) {
@@ -110,6 +157,24 @@
 
   .services__items {
     flex-wrap: wrap;
+  }
+
+  .services__items ul {
+    margin: 20px 20px;
+  }
+}
+@media (max-width: 576px) {
+  .services__home {
+    max-width: 300px;
+    margin: 0 auto 60px auto;
+  }
+
+  .services__home > h2 {
+    margin: 20px 10px 10px 10px;
+  }
+
+  .services__items {
+    display: block;
   }
 
   .services__items ul {
@@ -145,7 +210,6 @@
   .contact-call p {
     margin: 0 100px 10px 10px;
     max-width: 520px;
-    min-width: 450px;
     font-size: 2em;
     line-height: 2.2rem;
   }
@@ -154,25 +218,31 @@
     line-height: 2.2rem;
   }
 }
-@media (max-width: 500px) {
+
+@media (max-width: 576px) {
   .contact-home {
     padding: 120px 0 60px 0;
-    overflow: hidden;
+  }
+
+  .contact-home > div {
+    display: block;
+    max-width: 300px;
   }
 
   .contact-call p {
-    margin: 0 100px 10px 10px;
-    max-width: 400px;
+    margin: 0 auto;
+    max-width: 300px;
     font-size: 1.5em;
     line-height: 1.6rem;
+    text-align: center;
   }
   .contact-call p:last-child {
-    font-size: 1.4em;
+    font-size: 1.5em;
     line-height: 1.6rem;
+    margin: 10px 0 80px 0;
   }
   .contact-call a {
-    font-size: 1.75em;
-    line-height: 2rem;
+    display: none;
   }
 }
 
@@ -220,8 +290,6 @@
 
   .footer-copy {
     display: block;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .footer-copy img {
