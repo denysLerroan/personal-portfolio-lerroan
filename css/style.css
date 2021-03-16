@@ -1,6 +1,6 @@
 @import 'reset.css';
 @import 'main.css';
-@import 'navbar.css';
+@import 'menu-navbar.css';
 @import 'header.css';
 @import 'recent-works.css';
 @import 'work-flow.css';
@@ -8,3 +8,4 @@
 @import 'contact-home.css';
 @import 'footer.css';
 @import 'responsive.css';
+@import 'menu-mobile.css';
