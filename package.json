@@ -4,8 +4,8 @@
   "description": "Personal portfolio UI Designer / Front End Developer",
   "main": "index.html",
   "scripts": {
-    "build": "webpack --mode production ./js/script.js -o ./main.js",
-    "dev": "webpack --mode development --watch ./js/script.js -o ./main.js"
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.12.1"
+    "@babel/polyfill": "^7.12.1",
+    "whatwg-fetch": "^3.6.2"
   }
 }
