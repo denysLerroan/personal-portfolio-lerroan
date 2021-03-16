@@ -3,32 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
     <title>Lerroan - Front End Developer / UI Designer</title>
+    <script>
+      document.documentElement.className += ' js';
+    </script>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="icon-logo">
-        <a href=""><img src="assets/icons/icon-logo.svg" alt="" /></a>
+    <div class="container">
+      <nav class="navbar">
+        <div class="menu">
+          <div class="icon-logo">
+            <a href=""><img src="assets/icons/icon-logo.svg" alt="" /></a>
+          </div>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </nav>
+      <div class="main-container">
+        <div class="main">
+          <header>
+            <div class="overlay">
+              <div class="inner">
+                <h2>Front End Developer<br />UI Designer</h2>
+                <p>
+                  Understanding the need and offering technological, creative
+                  and effective solutions for responsive, optimized & adaptables
+                  <span>websites</span>, <span>e-commerce's</span> and
+                  <span>dashboards</span>.
+                  <br />
+                </p>
+              </div>
+            </div>
+          </header>
+        </div>
+        <div class="shadow one"></div>
+        <div class="shadow two"></div>
       </div>
-      <ul class="nav">
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">About me</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
 
-    <header class="header">
-      <h1>Front End Developer<br />UI Designer</h1>
-      <p>
-        Understanding the need and offering technological, creative and
-        effective solutions for responsive, optimized & adaptables
-        <span>websites</span>, <span>e-commerce's</span> and
-        <span>dashboards</span>.
-        <br />
-      </p>
-    </header>
+      <div class="links">
+        <ul>
+          <li>
+            <a href="#" style="--i: 0.05s">Services</a>
+          </li>
+          <li>
+            <a href="#" style="--i: 0.1s">Work</a>
+          </li>
+          <li>
+            <a href="#" style="--i: 0.15s">About me</a>
+          </li>
+          <li>
+            <a href="#" style="--i: 0.2s">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <section class="recent-works">
       <div class="works">
@@ -209,5 +239,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>
