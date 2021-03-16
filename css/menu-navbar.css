@@ -277,3 +277,18 @@ ul {
 .container.active .main:hover {
   transform: perspective(1300px) rotateY(20deg) translateZ(340px) scale(0.5);
 }
+
+.development-warning {
+  text-align: center;
+  font-size: 0.875em;
+  color: #737980;
+  line-height: 1.5em;
+}
+.development-warning a {
+  text-align: center;
+  color: rgb(185, 185, 185);
+}
+.development-warning a:hover {
+  color: #1a8dff;
+  text-decoration: underline;
+}
