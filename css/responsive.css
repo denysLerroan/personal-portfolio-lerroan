@@ -1,4 +1,4 @@
-/* Rcent Works */
+/* header */
 @media (max-width: 576px) {
   .inner {
     display: block;
@@ -21,6 +21,8 @@
     color: #737980;
   }
 }
+
+/* Rcent Works */
 
 @media (min-width: 641px) and (max-width: 1265px) {
   .recent-works {

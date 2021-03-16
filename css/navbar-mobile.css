@@ -1,0 +1,60 @@
+@media (max-width: 600px) {
+  .navbar {
+    top: 0;
+    left: 0;
+  }
+  .main {
+    left: 0;
+    transform-origin: right;
+  }
+  @media (max-width: 576px) {
+    .inner {
+      display: block;
+      max-width: 300px;
+      margin: 0 auto;
+      padding-top: 20px;
+      color: #222233;
+    }
+    .inner h2 {
+      padding: 0px;
+      font-size: 3.2em;
+      line-height: 3.5rem;
+      margin: 40px 10px;
+    }
+    .inner p {
+      padding: 0 10px;
+      max-width: 500px;
+      font-size: 1.125em;
+      color: #737980;
+    }
+  }
+
+  .container.active .main {
+    transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0);
+  }
+  @keyframes main-animation {
+    from {
+      transform: translate(0);
+    }
+    to {
+      transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+      opacity: 0;
+    }
+  }
+  .links {
+    width: 300px;
+    margin: 0 auto;
+    left: 0;
+    top: 0;
+  }
+  .links a {
+    font-size: 1.125rem;
+    text-transform: capitalize;
+    transition: 0.3s;
+    transform: translateY(10px);
+    animation: hide 0.5s forwards ease;
+  }
+  .shadow {
+    display: none;
+  }
+}
