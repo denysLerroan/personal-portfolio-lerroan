@@ -65,48 +65,50 @@ export default () => {
   </div>
   </section>
   
-  <section class="work-flow">
-  <div class="work-flow-info">
-    <h2>With 4 simple steps your idea come true</h2>
-    <p>
-      Do you need a new design, website or improvements to your current
-      project? <br />
-      I believe in a structured and well-organized process. And with this we
-      can build awesome things together.
-    </p>
+  <div class="work-flow-bg">
+    <section class="work-flow">
+      <div class="work-flow-info">
+        <h2>With 4 simple steps your idea come true</h2>
+        <p>
+          Do you need a new design, website or improvements to your current
+          project? <br />
+          I believe in a structured and well-organized process. And with this we
+          can build awesome things together.
+        </p>
+      </div>
+      <div class="work-flow-img">
+        <img src="assets/imgs/work-flow.svg" alt="" />
+      </div>
+    </section>
+    
+    <section class="services__home">
+    <h2>What can I offer to u?</h2>
+    <ul class="services__items">
+      <ul class="services--item-1">
+        <h2>Web development</h2>
+        <li>Landing Page</li>
+        <li>Websites</li>
+        <li>E-commerce</li>
+        <li>Blog</li>
+        <li>Dashboards</li>
+      </ul>
+      <ul class="services--item-2">
+        <h2>UI/UX Design</h2>
+        <li>User Research</li>
+        <li>User Interface Design</li>
+        <li>Wireframe</li>
+        <li>Prototype</li>
+      </ul>
+      <ul class="services--item-3">
+        <h2>Marketing</h2>
+        <li>SEO</li>
+        <li>Graphic Design</li>
+        <li>Analytics</li>
+      </ul>
+    </ul>
+    <a href="#">See more about my services</a>
+    </section>
   </div>
-  <div class="work-flow-img">
-    <img src="assets/imgs/work-flow.svg" alt="" />
-  </div>
-  </section>
-  
-  <section class="services__home">
-  <h2>What can I offer to u?</h2>
-  <ul class="services__items">
-    <ul class="services--item-1">
-      <h2>Web development</h2>
-      <li>Landing Page</li>
-      <li>Websites</li>
-      <li>E-commerce</li>
-      <li>Blog</li>
-      <li>Dashboards</li>
-    </ul>
-    <ul class="services--item-2">
-      <h2>UI/UX Design</h2>
-      <li>User Research</li>
-      <li>User Interface Design</li>
-      <li>Wireframe</li>
-      <li>Prototype</li>
-    </ul>
-    <ul class="services--item-3">
-      <h2>Marketing</h2>
-      <li>SEO</li>
-      <li>Graphic Design</li>
-      <li>Analytics</li>
-    </ul>
-  </ul>
-  <a href="#">See more about my services</a>
-  </section>
   
   <section class="contact-home">
   <div>
