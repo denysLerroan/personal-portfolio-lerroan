@@ -8,99 +8,135 @@
       document.documentElement.className += ' js';
     </script>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar">
-        <div class="menu">
-          <div class="icon-logo">
-            <a href=""><img src="assets/icons/icon-logo.svg" alt="" /></a>
-          </div>
-          <div class="development-warning">
-            <p>Site in final stage of development...</p>
-            <a
-              href="https://github.com/denysLerroan/personal-portfolio-lerroan"
-              target="_blank"
-              >Follow the code on Github</a
-            >
-          </div>
-          <div class="hamburger-menu">
-            <div class="bar"></div>
-          </div>
-        </div>
-      </nav>
-
-      <div class="links">
-        <ul>
-          <li>
-            <a href="/#" style="--i: 0.05s">Home</a>
-          </li>
-          <li>
-            <a href="/#services" style="--i: 0.05s">Services</a>
-          </li>
-          <li>
-            <a href="/#work" style="--i: 0.1s">Work</a>
-          </li>
-          <li>
-            <a href="/#about" style="--i: 0.15s">About me</a>
-          </li>
-          <li>
-            <a href="/#contact" style="--i: 0.2s">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <main id="root"></main>
+    <div id="preloader">
+      <div class="p">Loading...</div>
     </div>
-
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-info">
-          <div class="footer-quote">
-            <p>
-              “If You Are Working On Something That You Really Care About, You
-              Don’t Have To Be Pushed. The Vision Pulls You.”
-            </p>
-            <cite>- Steve Jobs</cite>
+    <div class="content-page">
+      <div class="container">
+        <nav class="navbar">
+          <div class="menu">
+            <div class="icon-logo">
+              <a href=""><img src="assets/icons/icon-logo.svg" alt="" /></a>
+            </div>
+            <div class="development-warning">
+              <p>Site in final stage of development...</p>
+              <a
+                href="https://github.com/denysLerroan/personal-portfolio-lerroan"
+                target="_blank"
+                >Follow the code on Github</a
+              >
+            </div>
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
           </div>
-          <nav class="footer-nav">
-            <ul>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Work</a></li>
-              <li><a href="#">About me</a></li>
-              <li><a href="#">Get in touch</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer-contact" id="contact">
-          <p>E-mail</p>
-          <a href="#">hello@lerroan.com.br</a>
-          <p>Follow me</p>
+        </nav>
+
+        <div class="links">
           <ul>
             <li>
-              <a href="https://www.behance.net/lerroan" target="_blank"
-                >Behance</a
-              >
+              <a href="/#" style="--i: 0.05s">Home</a>
             </li>
             <li>
-              <a
-                href="https://www.linkedin.com/in/denyslerroan/"
-                target="_blank"
-                >Linkedin</a
-              >
+              <a href="/#services" style="--i: 0.05s">Services</a>
             </li>
             <li>
-              <a href="https://github.com/denysLerroan" target="_blank"
-                >Github</a
-              >
+              <a href="/#work" style="--i: 0.1s">Work</a>
+            </li>
+            <li>
+              <a href="/#about" style="--i: 0.15s">About me</a>
+            </li>
+            <li>
+              <a href="/#contact" style="--i: 0.2s">Contact</a>
             </li>
           </ul>
         </div>
-        <div class="footer-copy">
-          <p>© All rights reserved. Lerroan - 2021 - Made in SP - Brazil</p>
-          <img src="assets/icons/brazil-flag.svg" alt="" />
-        </div>
+        <main id="root"></main>
       </div>
-    </footer>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-info">
+            <div class="footer-quote">
+              <p>
+                “If You Are Working On Something That You Really Care About, You
+                Don’t Have To Be Pushed. The Vision Pulls You.”
+              </p>
+              <cite>- Steve Jobs</cite>
+            </div>
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Get in touch</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-contact" id="contact">
+            <p>E-mail</p>
+            <a href="#">hello@lerroan.com.br</a>
+            <p>Follow me</p>
+            <ul>
+              <li>
+                <a href="https://www.behance.net/lerroan" target="_blank"
+                  >Behance</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/denyslerroan/"
+                  target="_blank"
+                  >Linkedin</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/denysLerroan" target="_blank"
+                  >Github</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-copy">
+            <p>© All rights reserved. Lerroan - 2021 - Made in SP - Brazil</p>
+            <img src="assets/icons/brazil-flag.svg" alt="" />
+          </div>
+        </div>
+      </footer>
+    </div>
     <script src="main.js"></script>
+    <script>
+      paceOptions = {
+        ajax: true,
+        document: true,
+        eventLag: false,
+      };
+
+      Pace.on('done', function () {
+        $('.p')
+          .delay(500)
+          .animate(
+            { top: '30%', opacity: '0' },
+            2000,
+            $.bez([0.19, 1, 0.22, 1])
+          );
+
+        $('#preloader')
+          .delay(1500)
+          .animate({ top: '-100%' }, 2000, $.bez([0.19, 1, 0.22, 1]));
+
+        TweenMax.from('.content-page', 2, {
+          delay: 2.4,
+          y: 10,
+          opacity: 0,
+          ease: Expo.easeInOut,
+        });
+      });
+    </script>
   </body>
 </html>
