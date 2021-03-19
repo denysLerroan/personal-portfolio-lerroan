@@ -5,6 +5,13 @@ import services from '../views/services.js';
 
 export default function initRoot() {
   const main = document.querySelector('#root');
+  const content = document.querySelector('.content-page');
+
+  function showContent() {
+    setTimeout(() => {
+      content.classList.add('show');
+    }, 3000);
+  }
 
   const init = () => {
     window.addEventListener('hashchange', () => {
@@ -30,6 +37,7 @@ export default function initRoot() {
 
   window.addEventListener('load', () => {
     main.appendChild(home());
+    showContent();
     init();
   });
 }
