@@ -1,4 +1,4 @@
-.container {
+.bg-navbar {
   min-height: 100vh;
   width: 100%;
   background-color: #222233;
@@ -118,22 +118,22 @@ header {
 
 /* ------------------------- */
 
-.container.active .bar {
+.bg-navbar.active .bar {
   transform: rotate(360deg);
   background-color: transparent;
 }
 
-.container.active .bar:before {
+.bg-navbar.active .bar:before {
   transform: translateY(0) rotate(45deg);
   background-color: #fff;
 }
 
-.container.active .bar:after {
+.bg-navbar.active .bar:after {
   transform: translateY(0) rotate(-45deg);
   background-color: #fff;
 }
 
-.container.active .main {
+.bg-navbar.active .main {
   animation: main-animation 0.5s ease;
   cursor: pointer;
   transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
@@ -184,7 +184,7 @@ ul {
   color: #1a8dff;
 }
 
-.container.active .links a {
+.bg-navbar.active .links a {
   animation: appear 0.5s forwards ease var(--i);
 }
 
@@ -232,7 +232,7 @@ ul {
   opacity: 0.1;
 }
 
-.container.active .shadow.one {
+.bg-navbar.active .shadow.one {
   animation: shadow-one 0.6s ease-out;
   transform: perspective(1300px) rotateY(20deg) translateZ(215px) scale(0.5);
 }
@@ -251,7 +251,7 @@ ul {
   }
 }
 
-.container.active .shadow.two {
+.bg-navbar.active .shadow.two {
   animation: shadow-two 0.6s ease-out;
   transform: perspective(1300px) rotateY(20deg) translateZ(120px) scale(0.5);
 }
@@ -270,11 +270,11 @@ ul {
   }
 }
 
-.container.active .main:hover + .shadow.one {
+.bg-navbar.active .main:hover + .shadow.one {
   transform: perspective(1300px) rotateY(20deg) translateZ(230px) scale(0.5);
 }
 
-.container.active .main:hover {
+.bg-navbar.active .main:hover {
   transform: perspective(1300px) rotateY(20deg) translateZ(340px) scale(0.5);
 }
 
