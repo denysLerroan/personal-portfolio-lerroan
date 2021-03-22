@@ -3,17 +3,17 @@ export default function initPageTransition() {
     var tl = gsap.timeline();
 
     tl.to('ul.transition li', {
-      duration: 0.5,
+      duration: 0.1,
       scaleY: 1,
       transformOrigin: 'bottom left',
-      stagger: 0.2,
+      stagger: 0.15,
     });
     tl.to('ul.transition li', {
-      duration: 0.5,
+      duration: 0.1,
       scaleY: 0,
       transformOrigin: 'bottom left',
-      stagger: 0.1,
-      delay: 0.3,
+      stagger: 0.08,
+      delay: 0.8,
     });
   }
 
@@ -28,7 +28,7 @@ export default function initPageTransition() {
   }
 
   function delay(n) {
-    n = n || 1500;
+    n = n || 2000;
     return new Promise((done) => {
       setTimeout(() => {
         done();
