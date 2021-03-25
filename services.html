@@ -17,6 +17,11 @@
       <li></li>
       <li></li>
     </ul>
+    <main
+    class="main-container"
+    data-barba="container"
+    data-barba-namespace="home"
+  >
     <div class="content-page">
       <div class="bg-navbar">
         <nav class="navbar">
@@ -57,11 +62,7 @@
             </li>
           </ul>
         </div>
-        <main
-          class="main-container"
-          data-barba="container"
-          data-barba-namespace="home"
-        >
+
           <div class="main">
             <header>
               <div class="overlay">
@@ -84,7 +85,6 @@
           </div>
           <div class="shadow one"></div>
           <div class="shadow two"></div>
-        </main>
 
         <section class="steps">
           <div class="steps-description">
@@ -169,8 +169,6 @@
             <a href="contact.html">Let’s gonna make awesome things together!</a>
           </div>
         </div>
-
-
       <footer class="footer">
         <div class="footer-content">
           <div class="footer-info">
@@ -184,7 +182,7 @@
             <nav class="footer-nav">
               <ul>
                 <li><a href="#">Services</a></li>
-                <li><a href="#">Work</a></li>
+                <li><a href="#">Workelele</a></li>
                 <li><a href="#">About me</a></li>
                 <li><a href="#">Get in touch</a></li>
               </ul>
@@ -221,42 +219,14 @@
         </div>
       </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  </main>
+
+
     <script src="https://unpkg.com/@barba/core"></script>
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"
     ></script>
     <script src="main.js"></script>
-    <script>
-      paceOptions = {
-        ajax: true,
-        document: true,
-        eventLag: false,
-      };
-
-      Pace.on('done', function () {
-        $('.p')
-          .delay(500)
-          .animate(
-            { top: '30%', opacity: '0' },
-            2000,
-            $.bez([0.19, 1, 0.22, 1])
-          );
-
-        $('#preloader')
-          .delay(1500)
-          .animate({ top: '-100%' }, 2000, $.bez([0.19, 1, 0.22, 1]));
-
-        TweenMax.from('.content-page', 2, {
-          delay: 2.4,
-          y: 10,
-          opacity: 0,
-          ease: Expo.easeInOut,
-        });
-      });
-    </script>
   </body>
 </html>
