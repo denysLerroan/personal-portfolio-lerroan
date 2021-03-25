@@ -9,3 +9,8 @@ body {
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
 }
+
+.inactive {
+  color: #222250 !important;
+  pointer-events: none;
+}
