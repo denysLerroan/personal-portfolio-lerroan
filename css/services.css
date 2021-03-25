@@ -1,16 +1,13 @@
 /* banner */
 .inner--services {
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.inner--services h2 {
-  font-weight: 500;
-  font-size: 4.5em;
+  /* justify-content: space-between;
+  flex-wrap: wrap; */
 }
 
-.banner-title {
-  flex: 2 1 820px;
-}
+/* .banner-title {
+  font-weight: 500;
+  margin-top: 50px;
+} */
 .banner-img {
   flex: 1 1 300px;
 }
@@ -93,9 +90,14 @@
 }
 
 .services-call-contact {
+  display: block;
+  margin: 0 10px 120px;
   text-align: center;
+}
+
+.services-call-contact a {
+  color: #222233;
   text-decoration: underline;
   font-style: italic;
   font-size: 2em;
-  margin-bottom: 120px;
 }
