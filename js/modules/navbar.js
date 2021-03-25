@@ -10,5 +10,6 @@ export default function initNavMenu() {
   });
   hamburger_menu.addEventListener('click', () => {
     bgNavbar.classList.toggle('active');
+    console.log(hamburger_menu);
   });
 }
