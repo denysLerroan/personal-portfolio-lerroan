@@ -1,0 +1,101 @@
+/* banner */
+.inner--services {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.inner--services h2 {
+  font-weight: 500;
+  font-size: 4.5em;
+}
+
+.banner-title {
+  flex: 2 1 820px;
+}
+.banner-img {
+  flex: 1 1 300px;
+}
+
+.banner-img img {
+  padding: 0 10px 0 40px;
+  max-width: 500px;
+}
+
+/* 4-steps */
+
+.steps {
+  padding: 60px 0;
+  background: #fafdff;
+}
+
+.steps-description {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+.steps-description h2 {
+  font-size: 2.25em;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.steps-description h2::before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border: 3px solid rgb(248, 53, 53);
+  border-radius: 50%;
+}
+.steps-description h2.first-step::before {
+  border-color: #0cf7e8;
+}
+.steps-description h2.second-step::before {
+  border-color: #61fa16;
+}
+.steps-description h2.third-step::before {
+  border-color: #e6e100;
+}
+.steps-description h2.forth-step::before {
+  border-color: #0c7ded;
+}
+.steps-description ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 10px;
+}
+.steps-description ul li p {
+  max-width: 500px;
+  margin: 20px 0px 60px 72px;
+  font-size: 1.125em;
+  line-height: 1.4;
+}
+
+/* services-list */
+.services-list {
+  padding: 60px 0px;
+}
+.services-list__text {
+  text-align: center;
+}
+.services-list__text h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+.services-list__text p {
+  font-size: 1.5em;
+  margin: 30px 0;
+  font-weight: 500;
+}
+
+.services__items-page {
+  margin: 20px auto;
+}
+
+.services-call-contact {
+  text-align: center;
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 2em;
+  margin-bottom: 120px;
+}
