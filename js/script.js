@@ -5,5 +5,5 @@ import initPageTransition from './modules/page-transition.js';
 
 // initPace();
 // initPageLoader();
-initNavMenu();
 initPageTransition();
+initNavMenu();
