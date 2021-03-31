@@ -1,5 +1,9 @@
 /* banner */
 
+.inner-services{
+  /* min-height: 150vh; */
+}
+
 .banner-img {
   flex: 1 1 300px;
 }

@@ -39,6 +39,35 @@
     max-width: 300px;
     margin: 0 auto;
   }
+  header.mobile-height{
+    min-height: 150vh;
+  }
+  .steps-description h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1;
+  }
+  .steps-description ul li p {
+    max-width: 300px;
+    margin: 20px 10px 40px;
+    font-size: 1.125em;
+    line-height: 1.4;
+  }
+  .about-text > h2{
+    font-size: 3em;
+    font-weight: 500;
+    margin: 0 10px 20px 10px;
+  }
+  .about-text p{
+    margin: 0 10px;
+    font-size: 1.125em;
+  }
+  .skills-title > h2{
+    font-size: 2em;
+  }
+  .professional-skills a{
+    font-size: 2em;
+  }
 }
 
 /* Rcent Works */
