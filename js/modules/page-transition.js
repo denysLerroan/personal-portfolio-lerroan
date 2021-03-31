@@ -19,11 +19,16 @@ export default function initPageTransition() {
 
   function contentAnimation() {
     var tl = gsap.timeline();
-    tl.from('.inner', {
+    tl.from('.js-content-animation', {
       duration: 1.2,
       translateY: 50,
       opacity: 0,
     });
+    // tl.from('.inner', {
+    //   duration: 0.2,
+    //   translateY: 50,
+    //   opacity: 0,
+    // });
     // tl.to('img', { clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)' });
   }
 
