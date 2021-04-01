@@ -15,6 +15,12 @@
   max-width: 520px;
   font-size: 2.25em;
   line-height: 2.5rem;
+  text-align: center;
+}
+.contact-img img{
+  margin: 80px 80px;
+  border-radius: 50%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.25);
 }
 .contact-call p:last-child {
   font-size: 2em;
@@ -39,12 +45,12 @@
 }
 
 .contact-form label,
-.contact-form > h2 {
+.contact-form > h3 {
   margin-bottom: 20px;
   font-size: 1.125em;
   font-weight: 500;
 }
-.contact-form > h2:last-of-type {
+.contact-form > h3:last-of-type {
   margin-top: 40px;
 }
 

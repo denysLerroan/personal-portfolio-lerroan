@@ -44,16 +44,16 @@
             <a href="/#" style="--i: 0.05s">Home</a>
           </li>
           <li>
-            <a href="services.html" style="--i: 0.05s">Services</a>
+            <a href="#work" style="--i: 0.05s">Work</a>
           </li>
           <li>
-            <a href="#" style="--i: 0.1s" class="inactive">Work</a>
+            <a href="services.html" style="--i: 0.05s">Services</a>
           </li>
           <li>
             <a href="about.html" style="--i: 0.15s">About me</a>
           </li>
           <li>
-            <a href="#" style="--i: 0.2s" class="inactive">Contact</a>
+            <a href="#contact" style="--i: 0.2s">Contact</a>
           </li>
         </ul>
       </div>
@@ -83,7 +83,7 @@
         <div class="shadow one"></div>
         <div class="shadow two"></div>
 
-        <section class="recent-works">
+        <section class="recent-works" id="work">
           <div class="works">
             <h2>My recent works</h2>
             <section class="work">
@@ -164,15 +164,16 @@
           </section>
         </div>
 
-        <section class="contact-home">
+        <section class="contact-home" id="contact">
           <div>
             <div class="contact-call">
               <p>
-                Do you have an idea to expand your business or do you want to
-                improve your brand exposure and reach more customers?
+                Let’s work together and build
+                sweet awesome things!
               </p>
-              <a href=""> Get in touch!</a>
-              <p>We can make it together!</p>
+              <div class="contact-img">
+                <img src="/assets/icons/contact-logo.svg" alt="">
+              </div>
             </div>
 
             <form action="" class="contact-form">
@@ -183,7 +184,7 @@
               <label for="">What is your e-mail?</label>
               <input type="text" placeholder="Type your e-mail" />
 
-              <h2>What do you want to get done?</h2>
+              <h3>What do you want to get done?</h3>
               <div class="form-options">
                 <input type="radio" id="landing-page" value="landing-page" name="service" />
                 <label for="landing-page">Landing Page</label>
@@ -201,7 +202,7 @@
                 <label for="ui-design">UI Design</label>
               </div>
 
-              <h2>Tell me a little about your project</h2>
+              <h3>Tell me a little about your project</h3>
               <textarea placeholder="Type your message" rows="4" cols="50"></textarea>
               <button type="submit">Send</button>
             </form>
