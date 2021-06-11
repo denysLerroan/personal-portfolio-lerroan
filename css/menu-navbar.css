@@ -64,7 +64,7 @@
   width: 100%;
   left: 0;
   z-index: 5;
-  overflow: hidden;
+  /* overflow: hidden; */
   transform-origin: left;
   transform-style: preserve-3d;
   transition: 0.5s;
@@ -80,7 +80,7 @@ header {
 .overlay {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   top: 0;
   left: 0;
   background-color: rgb(255, 255, 255);
@@ -95,6 +95,7 @@ header {
   max-width: 1260px;
   margin: 0 auto;
   color: rgb(0, 0, 0);
+  /* background-color: seagreen; */
 }
 
 .inner h2 {

@@ -1,16 +1,26 @@
-/* banner */
-
-.inner-services{
-  /* min-height: 150vh; */
+.inner-services {
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(255, 255, 255);
+  padding: 150px 0;
 }
 
-.banner-img {
-  flex: 1 1 300px;
+.services-items {
+  max-width: 1260px;
+  margin: 100px auto 10px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-
-.banner-img img {
-  padding: 0 10px 0 40px;
-  max-width: 500px;
+.services-items > h2 {
+  flex: 1 1 550px;
+  max-width: 800px;
+  font-size: 4.5em;
+  margin: 0px 15px 20px 15px;
+}
+.services-img {
+  /* flex: 1 1 200px; */
+  margin: 0px 15px;
 }
 
 /* 4-steps */

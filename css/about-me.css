@@ -1,22 +1,21 @@
-.about-me{
+.about-me {
   width: 100%;
   min-height: 100vh;
   background: rgb(255, 255, 255);
-
 }
 
-.about-text{
+.about-text {
   margin: 0px auto;
   padding: 150px 0;
   max-width: 1260px;
   text-align: center;
 }
-.about-text > h2{
+.about-text > h2 {
   font-size: 4.5em;
   font-weight: 500;
   margin: 0 10px 40px 10px;
 }
-.about-text p{
+.about-text p {
   font-size: 1.5em;
   line-height: 1.4;
   margin: 0 auto 20px auto;
@@ -24,11 +23,11 @@
   max-width: 830px;
 }
 
-.professional-skills{
+.professional-skills {
   background: white;
   padding-bottom: 120px;
 }
-.professional-skills a{
+.professional-skills a {
   display: block;
   margin-top: 60px;
   padding: 0 20px;
@@ -38,28 +37,28 @@
   color: #000;
   text-align: center;
 }
-.professional-skills a:hover{
-  color: #0C7DED;
+.professional-skills a:hover {
+  color: #0c7ded;
 }
 
-.skills-title{
+.skills-title {
   max-width: 1260px;
   margin: 0 auto;
 }
-.skills-title > h2{
+.skills-title > h2 {
   font-size: 2.25em;
   font-weight: 500;
   margin: 0px 20px;
   padding: 30px 0;
 }
 
-.skills-list{
+.skills-list {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.skills-list ul{
+.skills-list ul {
   background: #ffffff;
   width: 400px;
   padding: 40px 0;
@@ -71,14 +70,13 @@
   justify-content: flex-start;
   align-items: center;
   border-radius: 5px;
-
 }
-.skills-list ul h2{
+.skills-list ul h2 {
   font-size: 2em;
   font-weight: 500;
   padding-bottom: 20px;
 }
-.skills-list ul h2::before{
+.skills-list ul h2::before {
   content: '';
   display: inline-block;
   width: 12px;
@@ -87,18 +85,18 @@
   border-radius: 50%;
   margin: 0 5px;
 }
-.skills-list ul .list-web > h2::before{
-  border-color: #0C7DED;
+.skills-list ul .list-web > h2::before {
+  border-color: #0c7ded;
 }
-.skills-list ul .list-design > h2::before{
-  border-color: #E6E100;
+.skills-list ul .list-design > h2::before {
+  border-color: #e6e100;
 }
-.skills-list ul li{
+.skills-list ul li {
   padding-left: 40px;
   font-size: 1.125em;
   line-height: 1.8;
 }
-.skills-list ul li::before{
+.skills-list ul li::before {
   content: '';
   display: inline-block;
   width: 3px;
@@ -107,17 +105,16 @@
   border-radius: 50%;
   margin-right: 10px;
 }
-.skills-list ul .list-web > li::before{
-  background-color: #0C7DED;
-  border-color: #0C7DED;
+.skills-list ul .list-web > li::before {
+  background-color: #0c7ded;
+  border-color: #0c7ded;
 }
-.skills-list ul .list-design > li::before{
-  background-color: #E6E100;
-  border-color: #E6E100;
+.skills-list ul .list-design > li::before {
+  background-color: #e6e100;
+  border-color: #e6e100;
 }
 
-
-.work-tools{
+.work-tools {
   border-radius: 5px;
   width: 1030px;
   padding-top: 20px;
@@ -126,8 +123,7 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25), 0 10px 40px rgba(0, 0, 0, 0.25);
 }
 
-.work-tools h2{
+.work-tools h2 {
   text-align: center;
   margin-bottom: 40px;
 }
-
