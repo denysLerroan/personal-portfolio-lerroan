@@ -112,38 +112,11 @@
   width: calc(280% + 4px);
   border-radius: 15px;
   margin: 0 13px;
-  opacity: 0.4;
-  background: linear-gradient(
-    45deg,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #00ffd5
-  );
-  background-size: 250%;
-  transition: opacity 0.3s ease-in-out;
-  animation: animte 5s linear infinite;
+  opacity: 0.6;
+  background: linear-gradient(45deg, #fffb00, #48ff00, #00ffd5, #002bff);
+  background-size: 100%;
 }
 
 .works-title {
   margin-bottom: 60px;
-}
-
-@keyframes animte {
-  0% {
-    opacity: 0.5;
-    background-position: 0% 0%;
-  }
-  50% {
-    opacity: 1;
-    background-position: 100% 0%;
-  }
-  100% {
-    opacity: 0.7;
-    background-position: 0% 0%;
-  }
 }
