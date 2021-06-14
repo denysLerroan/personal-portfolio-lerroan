@@ -1,7 +1,7 @@
 .bg-navbar {
   min-height: 100vh;
   width: 100%;
-  background-color: #222233;
+  /* background-color: #222233; */
   background-image: linear-gradient(160deg, #14141f 40%, #121224 54%);
 }
 
@@ -73,7 +73,7 @@
 header {
   min-height: 100vh;
   width: 100%;
-  background: #222233;
+  /* background: #222233; */
   position: relative;
 }
 
