@@ -24,6 +24,7 @@ export default function initPageTransition() {
       translateY: 50,
       opacity: 0,
     });
+
     // tl.from('.inner', {
     //   duration: 0.2,
     //   translateY: 50,

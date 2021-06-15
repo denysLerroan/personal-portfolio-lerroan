@@ -1,0 +1,23 @@
+.js .js-scroll {
+  opacity: 0;
+}
+.js .js-scroll.js-scroll-down {
+  opacity: 0;
+  transform: translate3d(0px, -50px, 0);
+  transition: 0.8s;
+}
+.js .js-scroll.js-scroll-left {
+  opacity: 0;
+  transform: translate3d(-50px, 0px, 0);
+  transition: 0.8s;
+}
+.js .js-scroll.js-scroll-right {
+  opacity: 0;
+  transform: translate3d(50px, 0px, 0px);
+  transition: 0.8s;
+}
+
+.js .js-scroll.ativa-scroll {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
