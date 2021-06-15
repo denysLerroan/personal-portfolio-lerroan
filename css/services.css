@@ -110,3 +110,15 @@
 .services-call-contact a:hover {
   color: #0c7ded;
 }
+
+.rotate-animation {
+  /* transition: 2s; */
+  animation: spin 40s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    max-width: 100%;
+    -webkit-transform: rotate(360deg);
+  }
+}
