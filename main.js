@@ -27,7 +27,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initPageTransition)\n/* harmony export */ });\nfunction initPageTransition() {\r\n  function pageTransition() {\r\n    var tl = gsap.timeline();\r\n\r\n    tl.to('ul.transition li', {\r\n      duration: 0.1,\r\n      scaleY: 1,\r\n      transformOrigin: 'bottom left',\r\n      stagger: 0.15,\r\n    });\r\n    tl.to('ul.transition li', {\r\n      duration: 0.1,\r\n      scaleY: 0,\r\n      transformOrigin: 'bottom left',\r\n      stagger: 0.08,\r\n      delay: 0.8,\r\n    });\r\n  }\r\n\r\n  function contentAnimation() {\r\n    var tl = gsap.timeline();\r\n    tl.from('.js-content-animation', {\r\n      duration: 1.2,\r\n      translateY: 50,\r\n      opacity: 0,\r\n    });\r\n    // tl.from('.inner', {\r\n    //   duration: 0.2,\r\n    //   translateY: 50,\r\n    //   opacity: 0,\r\n    // });\r\n    // tl.to('img', { clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)' });\r\n  }\r\n\r\n  function delay(n) {\r\n    n = n || 2000;\r\n    return new Promise((done) => {\r\n      setTimeout(() => {\r\n        done();\r\n      }, n);\r\n    });\r\n  }\r\n\r\n  barba.init({\r\n    sync: true,\r\n\r\n    transitions: [\r\n      {\r\n        async leave(data) {\r\n          const done = this.async();\r\n\r\n          pageTransition();\r\n          await delay(1500);\r\n          done();\r\n        },\r\n        async enter(data) {\r\n          contentAnimation();\r\n        },\r\n        async once(data) {\r\n          contentAnimation();\r\n        },\r\n      },\r\n    ],\r\n  });\r\n}\r\n\n\n//# sourceURL=webpack://lerroan-project/./js/modules/page-transition.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initPageTransition)\n/* harmony export */ });\nfunction initPageTransition() {\r\n  function pageTransition() {\r\n    var tl = gsap.timeline();\r\n\r\n    tl.to('ul.transition li', {\r\n      duration: 0.1,\r\n      scaleY: 1,\r\n      transformOrigin: 'bottom left',\r\n      stagger: 0.15,\r\n    });\r\n    tl.to('ul.transition li', {\r\n      duration: 0.1,\r\n      scaleY: 0,\r\n      transformOrigin: 'bottom left',\r\n      stagger: 0.08,\r\n      delay: 0.8,\r\n    });\r\n  }\r\n\r\n  function contentAnimation() {\r\n    var tl = gsap.timeline();\r\n    tl.from('.js-content-animation', {\r\n      duration: 1.2,\r\n      translateY: 50,\r\n      opacity: 0,\r\n    });\r\n\r\n    // tl.from('.inner', {\r\n    //   duration: 0.2,\r\n    //   translateY: 50,\r\n    //   opacity: 0,\r\n    // });\r\n    // tl.to('img', { clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)' });\r\n  }\r\n\r\n  function delay(n) {\r\n    n = n || 2000;\r\n    return new Promise((done) => {\r\n      setTimeout(() => {\r\n        done();\r\n      }, n);\r\n    });\r\n  }\r\n\r\n  barba.init({\r\n    sync: true,\r\n\r\n    transitions: [\r\n      {\r\n        async leave(data) {\r\n          const done = this.async();\r\n\r\n          pageTransition();\r\n          await delay(1500);\r\n          done();\r\n        },\r\n        async enter(data) {\r\n          contentAnimation();\r\n        },\r\n        async once(data) {\r\n          contentAnimation();\r\n        },\r\n      },\r\n    ],\r\n  });\r\n}\r\n\n\n//# sourceURL=webpack://lerroan-project/./js/modules/page-transition.js?");
 
 /***/ }),
 
@@ -42,6 +42,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./js/modules/scroll.js":
+/*!******************************!*\
+  !*** ./js/modules/scroll.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initScroll)\n/* harmony export */ });\nfunction initScroll() {\r\n  const sections = document.querySelectorAll('.js-scroll');\r\n  const windowHeight = window.innerHeight * 0.75;\r\n\r\n  function animaScroll() {\r\n    sections.forEach((section) => {\r\n      const sectionTop = section.getBoundingClientRect().top - windowHeight;\r\n      if (sectionTop < 0) {\r\n        section.classList.add('ativa-scroll');\r\n      }\r\n    });\r\n  }\r\n  window.addEventListener('scroll', animaScroll);\r\n}\r\n\n\n//# sourceURL=webpack://lerroan-project/./js/modules/scroll.js?");
+
+/***/ }),
+
 /***/ "./js/script.js":
 /*!**********************!*\
   !*** ./js/script.js ***!
@@ -49,7 +60,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_navbar_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/navbar.js */ \"./js/modules/navbar.js\");\n/* harmony import */ var _modules_page_transition_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/page-transition.js */ \"./js/modules/page-transition.js\");\n/* harmony import */ var _modules_read_more_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/read-more.js */ \"./js/modules/read-more.js\");\n\r\n\r\n\r\n\r\n(0,_modules_page_transition_js__WEBPACK_IMPORTED_MODULE_1__.default)();\r\n(0,_modules_navbar_js__WEBPACK_IMPORTED_MODULE_0__.default)();\r\n(0,_modules_read_more_js__WEBPACK_IMPORTED_MODULE_2__.default)();\r\n\n\n//# sourceURL=webpack://lerroan-project/./js/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_navbar_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/navbar.js */ \"./js/modules/navbar.js\");\n/* harmony import */ var _modules_page_transition_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/page-transition.js */ \"./js/modules/page-transition.js\");\n/* harmony import */ var _modules_read_more_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/read-more.js */ \"./js/modules/read-more.js\");\n/* harmony import */ var _modules_scroll_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/scroll.js */ \"./js/modules/scroll.js\");\n\r\n\r\n\r\n\r\n\r\n(0,_modules_page_transition_js__WEBPACK_IMPORTED_MODULE_1__.default)();\r\n(0,_modules_navbar_js__WEBPACK_IMPORTED_MODULE_0__.default)();\r\n(0,_modules_read_more_js__WEBPACK_IMPORTED_MODULE_2__.default)();\r\n(0,_modules_scroll_js__WEBPACK_IMPORTED_MODULE_3__.default)();\r\n\n\n//# sourceURL=webpack://lerroan-project/./js/script.js?");
 
 /***/ }),
 

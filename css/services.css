@@ -112,7 +112,6 @@
 }
 
 .rotate-animation {
-  /* transition: 2s; */
   animation: spin 40s linear infinite;
 }
 
