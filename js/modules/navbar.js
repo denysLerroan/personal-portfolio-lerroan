@@ -6,12 +6,6 @@ export default function initNavMenu() {
   links.forEach((link) => {
     link.addEventListener('click', () => {
       bgNavbar.classList.toggle('active');
-      if (link.innerHTML === 'About me') {
-        setTimeout(() => {
-          window.location.pathname = '/about.html';
-          console.log(window.location);
-        }, 2000);
-      }
     });
   });
   hamburger_menu.addEventListener('click', () => {

@@ -24,13 +24,32 @@ export default function initPageTransition() {
       translateY: 50,
       opacity: 0,
     });
+    initScroll();
+    initReadMore();
+  }
 
-    // tl.from('.inner', {
-    //   duration: 0.2,
-    //   translateY: 50,
-    //   opacity: 0,
-    // });
-    // tl.to('img', { clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)' });
+  function initScroll() {
+    const sections = document.querySelectorAll('.js-scroll');
+    const windowHeight = window.innerHeight * 0.75;
+
+    function animaScroll() {
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top - windowHeight;
+        if (sectionTop < 0) {
+          section.classList.add('ativa-scroll');
+        }
+      });
+    }
+    window.addEventListener('scroll', animaScroll);
+  }
+
+  function initReadMore() {
+    let more = document.querySelector('.more');
+    if (more) {
+      more.addEventListener('click', () => {
+        more.parentNode.classList.toggle('active-read');
+      });
+    }
   }
 
   function delay(n) {
