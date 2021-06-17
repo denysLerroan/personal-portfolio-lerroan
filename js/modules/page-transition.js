@@ -30,7 +30,7 @@ export default function initPageTransition() {
 
   function initScroll() {
     const sections = document.querySelectorAll('.js-scroll');
-    const windowHeight = window.innerHeight * 0.75;
+    const windowHeight = window.innerHeight * 0.7;
 
     function animaScroll() {
       sections.forEach((section) => {
